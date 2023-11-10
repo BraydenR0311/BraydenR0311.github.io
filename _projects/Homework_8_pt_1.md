@@ -22,3 +22,27 @@ These charts represent square footage of the different usage descriptions. The b
 I think the bar chart works well because it shows categorical variables. It also aggregates the square footage by the mean. For the point graph, it's best represented by a point because it shows individual buildings with their respective square footage, and the year is on the x-axis, of course. There's no specific color scheme. They're just represented by different colors for visual appeal and comprehensibility. I'm really proud of this work.
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/chart.json" style="width: 100%"></vegachart>
+
+## Search The Data & Methods
+
+Below is where we can put some links to both the data and the analysis code as buttons:
+
+```
+<div class="left">
+{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+</div>
+
+<div class="right">
+{% include elements/button.html link="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html" text="The Analysis" %}
+</div>
+```
+
+<!-- these are written in a combo of html and liquid --> 
+
+<div class="left">
+{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+</div>
+
+<div class="right">
+{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+</div>
