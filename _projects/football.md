@@ -12,7 +12,7 @@ custom_js:
 
 
 # Interactive, Linked Illini Football Charts
-As an Illini fan and a saxophone in the Marching Illini, I'm deeply invested in our football team. It's also cool to learn about the history of the team and how we've done over the years. As a result of this passion, I decided to make an interactive dashboard to display the performance of our team from 1892 to 2020.
+As a die-hard Illinois fan and a saxophone in the Marching Illini, I'm deeply invested in our football team. It's also cool to learn about the history of the team and how we've done over the years. As a result of this passion, I decided to make an interactive dashboard to display the performance of our team from 1892 to 2020.
 <vegachart schema-url="{{ site.baseurl }}/assets/json/football_chart.json" style="width: 100%"></vegachart>
 
 
