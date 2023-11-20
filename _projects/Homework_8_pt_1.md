@@ -1,5 +1,5 @@
 ---
-name: Homework 8 pt. 1
+name: IS 445 Homework 8 pt. 1
 tools: [Python, Altair, vega-lite]
 image: assets/pngs/chart.png
 description: Chart 1 for Homework 8

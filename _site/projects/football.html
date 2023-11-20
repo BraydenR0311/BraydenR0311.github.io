@@ -22,12 +22,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="Uhhh I'm gonna get such a good grade on this">
-  <meta property="og:image" content="assets/pngs/cena.jpg">
+  <meta property="og:title" content="Illini Football">
+  <meta property="og:description" content="Chart 1 for Homework 8">
+  <meta property="og:image" content="assets/pngs/football.png">
 
-  <title>Projects</title>
-  <meta name="description" content="Uhhh I'm gonna get such a good grade on this">
+  <title>Illini Football</title>
+  <meta name="description" content="Chart 1 for Homework 8">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -73,43 +73,33 @@
   </div>
 
 </nav>
-    <div class="card-columns m-3 mt-5">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="interactive-linked-illini-football-charts">Interactive, Linked Illini Football Charts</h1>
+<p>As an Illini fan and a member of the Marching Illini, I’m deeply invested in our football team. It’s also cool to learn about the history of the team and how we’ve done over the years. As a result of this passion, I decided to make an interactive dashboard to display the performance of our team from 1892 to 2020.</p>
+<vegachart schema-url="/assets/json/football_chart.json" style="width: 100%"></vegachart>
 
-  <!-- Local Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/homework-8-pt-1" class="project card text-themed"><img id="is-445-homework-8-pt-1-img" class="card-img-top" src="/assets/pngs/chart.png" alt="IS 445 Homework 8 pt. 1" /><div class="card-body">
-      <h5 id="is-445-homework-8-pt-1-name" class="card-title">IS 445 Homework 8 pt. 1
-      </h5>
-      <p id="is-445-homework-8-pt-1-desc" class="card-text">Chart 1 for Homework 8</p>
-      <p id="is-445-homework-8-pt-1-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">Altair</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
+<p>The charts are linked, the top chart being almost the entire existence of Illinois Football, displaying the wins and losses grouped by season. When you hover over the chart, you will see a tooltip with essential information. Click on the chart on a given year and it will filter the data for the chart below. What you will see in the bottom chart is the scores from each game of the selected season. Neat, right?</p>
+
+<p>Some tips: The chart and tooltip just look better when the website is in “light mode”, which can be changed by clicking on the sun/moon emoji in the site’s toolbar. Also, don’t double click and don’t click on the point markers. Evil things will happen.</p>
+
+<h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/BraydenR0311/BraydenR0311.github.io/blob/main/data/building_inventory.csv">
+  The Data
+</a>
 </div>
 
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/football" class="project card text-themed"><img id="illini-football-img" class="card-img-top" src="/assets/pngs/football.png" alt="Illini Football" /><div class="card-body">
-      <h5 id="illini-football-name" class="card-title">Illini Football
-      </h5>
-      <p id="illini-football-desc" class="card-text">Chart 1 for Homework 8</p>
-      <p id="illini-football-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">Vega-Altair</span></p>
-    </div>
-  </a>
-</div>
-
-  
-
-
-
-
-  <!-- Remote Projects -->
-  
-
-  
-
-  
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/BraydenR0311/BraydenR0311.github.io/blob/main/python_notebooks/hw%208.ipynb">
+  The Analysis
+</a>
 </div>
 
 
+</div>
   </main>
   <footer class="mt-auto py-3 text-center">
 
@@ -147,6 +137,17 @@
 
 </footer>
 
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
 
 
 
