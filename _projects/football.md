@@ -16,7 +16,7 @@ As a die-hard Illinois fan and a saxophone in the Marching Illini, I'm deeply in
 <vegachart schema-url="{{ site.baseurl }}/assets/json/football_chart.json" style="width: 100%"></vegachart>
 
 
-The charts are linked, the top chart covering almost the entire existence of Illinois Football, displaying the wins and losses grouped by season. When you hover over the chart, you will see a tooltip with essential information. Click on the chart on a given year and it will filter the data for the chart below. What you see in the bottom chart are the scores from each game of the selected season. Neat, right?
+The charts are linked, the top chart covering almost the entire existence of Illinois Football, displaying the wins and losses grouped by season. When you hover over the chart, you will see a tooltip with essential information. Click on the chart on a given year and it will filter the data for the chart below it. What you see in the bottom chart are the scores from each game of the selected season. Neat, right?
 
 ## Some Tips:
 The chart and tooltip just look better when the website is in "light mode", which can be changed by clicking on the sun/moon emoji in the site's navigation menu. Also, don't double click and don't click on the point markers. Evil things will happen.

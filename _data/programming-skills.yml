@@ -1,14 +1,13 @@
 - name: HTML5/CSS3
-  percentage: 15
-  level: Beginner
+  percentage: 30
+  level: Intermediate
   color: 
-
-- name: Go
-  percentage: 0
-  level: Never used this
-  color:
-
 - name: Python
   percentage: 60
   level: Advanced
   color: secondary
+
+- name: Data vizualization
+percentage: 50
+level: Advanced
+color:

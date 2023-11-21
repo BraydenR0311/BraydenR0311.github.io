@@ -5,8 +5,8 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : IS445 Brayden's Zone 
-description         : Uhhh I'm gonna get such a good grade on this
+title               : Brayden's Portfolio
+description         : Check out the "projects" section for some neat stuff I've been working on!
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
 repository          :                     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
@@ -34,7 +34,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Brayden R.
-  image             : assets/pngs/cena.jpg
+  image             : assets/pngs/dub.jpg
 #  behance           : your_username
 # dribbble          : your_username
   email             : bjr3@illinois.edu
