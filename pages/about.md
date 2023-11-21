@@ -8,7 +8,11 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}**,<br>
-I am so goated. Look at me Ma I'm coding yay. 
+I'm an Information Sciences major at University of Illinois Urbana-Champaign.<br>
+I'm currently pursuing a Bachelor's degree and am planning on pursuing a Master's <br>
+once I graduate. I do data science, music, game design, and other computer-related <br>
+hobbies.
+
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
