@@ -10,7 +10,11 @@ custom_js:
   - justcharts
 ---
 
-
+# Names
+Brayden Riesberg - bjr3
+Anna Ochoa - aochoa29
+Justin Lam - hungkl2
+Kyle Cruz - kcruz27
 # Chicago Crime, Interactive Charts
 Below, we see two graphs that are linked interactively. On the very right is a legend that you can hover over, which filters data in the charts. For example, if you hover over "ARSON", you get results only for Arson. In the bar chart, the orange represents the crimes that resulted in arrests. So, have fun seeing which types of crimes result in the mosts arrests.
 
