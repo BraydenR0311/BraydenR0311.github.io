@@ -40,7 +40,7 @@ E-SMS manages DoD real property through a heirarchical categorization system. Or
 
 I went through a couple first drafts before getting fed up with how long this was taking and settled on a decent "good-enough" system which can be easily integrated into other ongoing projects.
 
-The heirarchy is a tree whose leaf nodes are the **Components**. Each level in the heirarchy is _composed_ of instances at the level directly under it. We call these instances "children". I chose to represent the entire collection of all installations
+The heirarchy is a tree whose leaf nodes are the **Components**. Each level in the heirarchy is _composed_ of instances at the level directly under it. We call these instances "children". I chose to represent an entire collection of these objects as an **ESMSPortfolio**.
 
 ## Challenges
 
