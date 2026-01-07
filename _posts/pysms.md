@@ -18,7 +18,7 @@ I'm in Python every day at this point, and since I work with mathematicians, it 
 
 I began to notice a pattern among the number of projects we've been working on. We were constantly rewriting the same utility functions, creating a fair amount of code duplication.
 
-A large chunk of our work revolves around facility degredation simulation, which itself revolves around one particular statistical model: [the Weibull Curve](<https://doi.org/10.1061/40799(213)4>) (seen below).
+A large chunk of our work revolves around facility degredation simulation, which itself revolves around particular statistical models like [the Weibull Curve](<https://doi.org/10.1061/40799(213)4>) (seen below).
 
 ![Weibull Curve](/assets/blog/pysms/curve.png)
 
