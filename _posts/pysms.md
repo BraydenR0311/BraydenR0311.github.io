@@ -36,7 +36,11 @@ Throughout the project, I've tried to draw design inspiration from popular Pytho
 
 At a high-level, I've separated the library into two sections: the functional API and the Object-oriented API. The functional API exposes the program similar to those functions from earlier. The Object-oriented approach is a bit more complex and has certainly pushed my software engineering skills.
 
-E-SMS manages DoD real property through a heirarchical categorization system. Installations contain sites which contain facilities (called "assets") which contain systems (ie. A10, B10 in Uniformat) which contain components (think A/C units, doors, walls). This system lends itself well to being thought of in an "object-oriented" sense.
+E-SMS manages DoD real property through a heirarchical categorization system. Organizations (ie. DoD, Army, Air Force) contain Installations (forts and bases) which contain sites which contain facilities (also called "assets") which contain systems (ie. A10, B10 in the Uniformat standard) which contain components (think A/C units, doors, walls). This system lends itself well to being thought of in an "object-oriented" sense.
+
+I went through a couple first drafts before getting fed up with how long this was taking and settled on a decent "good-enough" system which can be easily integrated into other ongoing projects.
+
+The heirarchy is a tree whose leaf nodes are the **Components**. Each level in the heirarchy is _composed_ of instances at the level directly under it. We call these instances "children". I chose to represent the entire collection of all installations
 
 ## Challenges
 
