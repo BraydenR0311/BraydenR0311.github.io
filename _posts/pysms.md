@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/pysms/cover.jpg"
 ---
 
-I'm in Python every day at this point, and since I work with mathematicians, it also happens to be their go-to. Its dynamic, interactive nature lets us rapidly write code that actualizes the research done by our senior engineers. Not to mention, it gets first-class attention from the ML/AI community so all the latest PyTorch models and pretty much all cutting edge research makes its way to Python first.
+I'm in Python every day at this point, and since I work with mathematicians, it also happens to be their go-to. Its dynamic, interactive nature lets us rapidly write code that actualizes the research done by our senior engineers. Not to mention, it gets first-class attention from the ML/AI community, so all the latest PyTorch models and cutting edge research make their way to Python first.
 
 ## Inception
 
@@ -78,4 +78,4 @@ The PhD engineers on our team have a much better intuition for how these _should
 
 ---
 
-This project was born out of a need to centralize and deduplicate common engineering and R&D utilities within the E-SMS ecosystem. It provides an avenue for members of our team to experiment and interact with our research findings in a tangible way. It also aims to speed up future development. Following SOLID principles and common design philosophies, PySMS is extensible and modifiable. My goal is that this project stands the test of time and is useful to us in a number of our projects.
+This project was born out of a need to centralize and deduplicate common engineering and R&D utilities within the E-SMS ecosystem. It provides an avenue for members of our team to experiment and interact with our research findings in a tangible way. It also aims to speed up future development. Following SOLID principles and common design philosophies, PySMS is extensible and modifiable. My goal is that this project stands the test of time and is useful to us in a number of projects.
