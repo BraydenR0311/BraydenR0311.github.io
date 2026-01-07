@@ -16,6 +16,14 @@ I'm in Python pretty much all day every day, and since I work with mathematician
 
 ---
 
-I began to notice a pattern among the number of projects we've worked on. We were constantly rewriting the same utility functions, creating a fair amount of code duplication.
+I began to notice a pattern among the number of projects we've been working on. We were constantly rewriting the same utility functions, creating a fair amount of code duplication.
 
-A large chunk of our work revolves around facility degredation simulation, which itself revolves around one particular statistical model: [the Weibull Curve](<https://doi.org/10.1061/40799(213)4>)
+A large chunk of our work revolves around facility degredation simulation, which itself revolves around one particular statistical model: [the Weibull Curve](<https://doi.org/10.1061/40799(213)4>) (seen below).
+
+![Weibull Curve](/assets/blog/pysms/curve.png)
+
+Take for example, this set of PyTorch calculation functions authored by one of our mathematicians for a facility optimization project:
+
+![Pytorch functions](/assets/blog/pysms/funcs.png)
+
+Don't worry if its not obvious what these functions do. The bottom line is that these same calculations have been written a number of times, scattered across jupyter notebooks and even written in languages like C# and R (As an aside, the top function is actually draws out the curve seen above under specific alpha and beta parameters).
