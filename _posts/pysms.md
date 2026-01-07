@@ -32,6 +32,8 @@ At some point late summer 2025, I thought it'd be useful if we had a place to pu
 
 ## Design
 
+---
+
 Throughout the project, I've tried to draw design inspiration from popular Python repos (ie. [Requests](https://docs.python-requests.org/), [Scikit-Learn](https://scikit-learn.org/), [Seaborn](https://seaborn.pydata.org/)). Whether its the API, unit tests, CLI, or even the documentation, I wanted my project to follow some tried and true design patterns.
 
 At a high-level, I've separated the library into two sections: the functional API and the object-oriented API. The functional API exposes the program in a way that looks similar to those functions from earlier. The Object-oriented approach is a bit more complex and has certainly tested my software engineering chops.
@@ -54,6 +56,8 @@ The model API is a subset of the object-oriented API. I use Protocols to define 
 
 ## Use cases
 
+---
+
 I have to take a pragmatic approach when developing this library. If it doesn't work well with our existing workflows, no one is going to use it.
 
 One particular use case is being able to parse familiar tables of E-SMS data into PySMS objects. I've began with `pysms.read_csv()` and `pysms.read_parquet()` which mirror the Pandas top-level functions. They each take in a filepath and parse the respective formats into an **ESMSPortfolio** which can access each level in the heirarchy through its properties (`.assets`, `.components`, etc.). It also has a `.dataframe()` method which performs joins on each levels' DataFrames. Because this is computationally expensive, the DataFrame is constructed only once the method is called. In an environment where performance is key, we usually won't call this. But, it's there!
@@ -61,6 +65,8 @@ One particular use case is being able to parse familiar tables of E-SMS data int
 Another reason for designing the object-oriented API is because there's a senior engineer on our team who has come to me with countless brilliant ideas of models he wants to test out and use. Instead of having to wait for me to understand his models which I feel require a PhD in engineering to understand, I want him to be able to implement them in a way that works seamlessly within PySMS.
 
 ## Challenges
+
+---
 
 By far, the biggest challenge is finding the best way to parameterize functions and object constructors. For instance, `calculate_component_condition()` is technically a function of component age. Therefore, the function signature can require the user to pass the "component age" _or..._ it can require "year built" along with a "projection_date" which defaults to `datetime.now()`. Adding insult to injury, function overloading is not native to the Python language.
 
@@ -70,4 +76,6 @@ The PhD engineers on our team have a much better intuition for how these _should
 
 ## Conclusion
 
-This project was born out of a need to centralize and deduplicate common engineering and R&D utilities within the E-SMS ecosystem. It provides an avenue for members of our team to experiment and interact with our research findings in a tangible way. It also aims to speed up future development. Following SOLID principles and common design philosophies, PySMS is extensible and modifiable.
+---
+
+This project was born out of a need to centralize and deduplicate common engineering and R&D utilities within the E-SMS ecosystem. It provides an avenue for members of our team to experiment and interact with our research findings in a tangible way. It also aims to speed up future development. Following SOLID principles and common design philosophies, PySMS is extensible and modifiable. My goal is that this project stands the test of time and is useful to us in a number of our projects.
