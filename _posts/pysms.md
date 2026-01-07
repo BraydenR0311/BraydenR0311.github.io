@@ -54,7 +54,7 @@ Since analysis is only ever useful on _multiple_ components, never just one, we 
 
 The model API is a subset of the object-oriented API. I use Protocols to define models to take advantage of Python's duck-typing system. As of now, a model is any object with a .predict() method, but different types of models have predict methods with different function signatures. A **WeibullCI** model takes a **ComponentAggregation** and accesses its members accordingly. I'm hoping to improve this system in the future as our needs change and grow, and as I learn more about Scikit-Learn's model API.
 
-## Use cases
+## Use Cases
 
 ---
 
