@@ -26,4 +26,24 @@ Take for example, this set of PyTorch calculation functions authored by one of o
 
 ![Pytorch functions](/assets/blog/pysms/funcs.png)
 
-Don't worry if its not obvious what these functions do. The bottom line is that these same calculations have been written a number of times, scattered across jupyter notebooks and even written in languages like C# and R (As an aside, the top function is actually draws out the curve seen above under specific alpha and beta parameters).
+Don't worry if its not obvious what these functions do. The bottom line is that these same calculations have been written a number of times, scattered across jupyter notebooks and even written in languages like C# and R (As an aside, the top function actually draws out the above curve when given specific alpha and beta parameters: 2.64 and 1.0, respectively).
+
+At some point late summer 2025, I thought it'd be nice if we had a place to put these common utilities. That way, we had one source of truth so we could create some thorough documentation and unit test the hell out of the code. So, I asked around if anyone thought it was remotely a good idea and not just a waste of time and precious taxpayer dollars. They were all onboard and thus, the PySMS repository was born.
+
+## Design
+
+Throughout the project, I've tried to draw design inspiration from popular Python repos (ie. [Requests](https://docs.python-requests.org/), [Scikit-Learn](https://scikit-learn.org/), [Seaborn](https://seaborn.pydata.org/)). Whether its the API, unit tests, CLI, or even the documentation, I wanted my project to follow some tried and true design patterns.
+
+At a high-level, I've separated the library into two sections: the functional API and the Object-oriented API. The functional API exposes the program similar to those functions from earlier. The Object-oriented approach is a bit more complex and has certainly pushed my software engineering skills.
+
+E-SMS manages DoD real property through a heirarchical categorization system. Installations contain sites which contain facilities (called "assets") which contain systems (ie. A10, B10 in Uniformat) which contain components (think A/C units, doors, walls). This system lends itself well to being thought of in an "object-oriented" sense.
+
+## Challenges
+
+By far, the biggest challenge is finding the best way to parameterize functions and object constructors. For instance, `calculate_component_condition()` is technically a function of component age. Therefore, the function signature can require the user to pass the "component age" _or..._ it can require "year built" along with a "projection_date" which defaults to `datetime.now()`. Adding insult to injury, function overloading is not native to the Python language.
+
+The PhD engineers on our team have a much better intuition for how these _should_ look. It's also one of those things where there isn't a single right answer (but there are wrong ones). That's why this project is an iterative process and is still in active development.
+
+## Conclusion
+
+This project was born out of a need to centralize and deduplicate common engineering and R&D utilities within the E-SMS ecosystem. It provides an avenue for members of our team to experiment and interact with our research findings in a tangible way. It also aims to speed up future development. Following SOLID principles and common design philosophies, PySMS is extensible and modifiable.
