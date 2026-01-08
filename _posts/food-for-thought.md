@@ -1,16 +1,18 @@
 ---
 title: "Food for Thought"
 excerpt: "Expanding my programming skills through PyGame."
-coverImage: "/assets/blog/pysms/cover.jpg"
+coverImage: "/assets/blog/food-for-thought/game.png"
 date: "2025-01-08"
 author:
   name: Brayden Riesberg
   picture: "/assets/blog/authors/brayden.jpg"
 ogImage:
-  url: "/assets/blog/pysms/cover.jpg"
+  url: "/assets/blog/food-for-thought/game.png"
 ---
 
 ## The Idea
+
+---
 
 Sometime during the fall of 2024, I was biking home from work, and I came up with an idea for a project to work on. It would be a game called "Food for Thought". I wanted to use PyGame, which is a Python library used to make games.
 
@@ -24,6 +26,8 @@ Since graduating, I haven't stopped trying to upskill and learn new programming 
 
 ## Learning
 
+---
+
 When I started this new project, I created a game design document and outline some important aspects of this game. First, that it would be called _Food for Thought_ because it would be a typing game where the user types out philosophers' quotes to cook food.
 
 I cooked up some simple assets using Inkscape and then got to work on the code. I picked up a book from O'Reilly called _Object-Oriented Python_ and read through it. I'd been exposed to OO concepts like inheritance, encapsulation, and polymorphism before, but I was having a lot of trouble. Let me tell you, this book helped, especially since it uses PyGame as a way of explaning OO.
@@ -32,8 +36,18 @@ When reading PyTorch code at work, I'd seen classes inheriting from `nn.module` 
 
 ## The Process
 
+---
+
 I make it a top-down tile-based game kind of like how the game _Overcooked_ looks. I also drew a lot of inspiration from a Youtuber called Goodgis and from a [video](https://www.youtube.com/watch?v=H09PmP5tsy8) he made. Studying his game's repo helped me understand how to organize and structure my game's components.
 
 Most of the time I was making this game, I didn't have a plan. I was just doing it as I went. I mean, it was just I side project I did for fun. I built entire facets of the game that I would eventually end up throwing out. Like an inventory system I made where the user would pull from a limited amount of ingredients and use those to cook.
 
 This went on and on for a really long time. I was also busy with other stuff at the time, like some additional math classes I decided to take after graduating (only cause work paid for it), and trying to enjoy life when I wasn't grinding. But, after trying things out, tinkering, and messing around, I eventually grew bored and made a point to get this game to a "playable" state. The source can be checked out [here](https://github.com/BraydenR0311/foodForThought) on my github!
+
+## The Future
+
+---
+
+All in all, this was a great learning experience which had a noticable effect at work. I was able to understand code that was tough to chew at one point. It definitely solidified my understanding on object-oriented programming, which is important for lanugages like C# and Java which rely on objects.
+
+I plan to explore Godot, an open source gamedev engine, and create games within that ecosystem.
