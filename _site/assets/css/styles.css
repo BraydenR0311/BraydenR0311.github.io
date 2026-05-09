@@ -1,0 +1,54 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif, Arial;
+  line-height: 1.5;
+  color: #3b3a30;
+  background-color: #F4F3EF;
+  margin: 0 auto;
+  max-width: 65rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header {
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 32px;
+}
+
+a {
+  color: #3b3a30;
+}
+
+a:hover {
+  color: #967969;
+}
+
+.current {
+  font-weight: bold;
+  color: #967969;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

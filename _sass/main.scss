@@ -1,0 +1,68 @@
+$font-stack: sans-serif, Arial;
+$primary-color:  #3b3a30;
+$secondary-color: #967969;
+$background-color: #F4F3EF;
+
+// HEX: #eaece5
+
+// HEX: #b2c2bf
+
+// HEX: #c0ded9
+
+// HEX: #3b3a30
+
+// HEX: #625750
+
+// HEX: #563f46
+
+html {
+  font-size: 16px;
+}
+
+body {
+    font-family: $font-stack;
+    line-height: 1.5;
+    color: $primary-color;
+    background-color: $background-color;
+    margin: 0 auto;
+    max-width: 65rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header {
+    margin: 0 auto;
+}
+
+nav {
+    font-size: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 32px
+
+}
+
+a {
+    // text-decoration: none;
+    color: $primary-color;
+}
+a:hover {  color: $secondary-color;  }
+
+.current {
+    font-weight: bold;
+    color: $secondary-color;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+  }
