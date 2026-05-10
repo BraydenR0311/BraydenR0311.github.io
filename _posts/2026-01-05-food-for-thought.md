@@ -1,6 +1,7 @@
 ---
 layout: post
 author: brayden
+type: blog
 ---
 
 ## The Idea

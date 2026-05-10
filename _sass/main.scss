@@ -24,17 +24,60 @@ body {
     line-height: 1.5;
     color: $primary-color;
     background-color: $background-color;
-    margin: 0 auto;
-    max-width: 65rem;
+    margin: 0;
+}
+
+a {
+    // text-decoration: none;
+    color: $primary-color;
 }
 
 h1 {
-    font-size: 3rem;
+    margin: 0.5rem auto;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+.img-container {
+    max-width: 100%;
+    // margin: 2rem auto;
+    text-align: center;
+}
+
+.img-container img {
+    width: 30%;
+}
+
+@media (max-width: 600px) {
+  .img-container img {
+    width: 60%;
+}
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 80vw;
 }
 
 header {
     margin: 0 auto;
+    max-width: 80vw;
+
 }
+
+header h1 {
+    margin: 1rem auto;
+    font-size: 3rem;
+}
+
+header a:hover {  color: inherit;  }
+
+header a {
+    text-decoration: none;
+}
+
 
 nav {
     font-size: 1.75rem;
@@ -45,24 +88,30 @@ nav {
 
 }
 
-a {
-    // text-decoration: none;
-    color: $primary-color;
-}
-a:hover {  color: $secondary-color;  }
+
+nav a:hover {  color: $secondary-color;  }
 
 .current {
     font-weight: bold;
     color: $secondary-color;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.no-bullets {
+.post-list {
     list-style-type: none;
     padding-left: 0;
-  }
+    margin: 0 auto;
+
+}
+
+.post-list div {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    font-size: 1.2rem;
+}
+.post-list p {
+    margin: 0 0px;
+    // width: 20ch;
+}
+

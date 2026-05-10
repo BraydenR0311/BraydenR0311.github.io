@@ -1,6 +1,8 @@
 
 <header>
-  <h1>Brayden Riesberg</h1>
+  <a href="/">
+    <h1>Brayden Riesberg</h1>
+  </a>
   <nav>
     {% for item in site.data.navigation %}
       <a href="{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}>
@@ -8,5 +10,5 @@
       </a>
     {% endfor %}
   </nav>
+  <hr>
 </header>
-<hr>

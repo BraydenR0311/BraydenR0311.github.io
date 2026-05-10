@@ -1,0 +1,25 @@
+---
+layout: default
+title: Projects
+---
+<h1>Projects</h1>
+
+{% assign projects = site.posts | where: "type", "project" | where: "project-type", "games" %}
+
+<h2>Games</h2>
+
+<ul class="post-list">
+  {% for post in projects %}
+    {% include post-li.html %}
+  {% endfor %}
+</ul>
+
+{% assign projects = site.posts | where: "type", "project" | where: "project-type", "misc" %}
+
+<h2>Misc</h2>
+
+<ul class="post-list">
+  {% for post in projects %}
+    {% include post-li.html %}
+  {% endfor %}
+</ul>
