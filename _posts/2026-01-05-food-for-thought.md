@@ -1,7 +1,8 @@
 ---
 layout: post
 author: brayden
-type: blog
+type: project
+project-type: games
 ---
 
 ## The Idea

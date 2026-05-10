@@ -14,6 +14,16 @@ title: Projects
   {% endfor %}
 </ul>
 
+{% assign projects = site.posts | where: "type", "project" | where: "project-type", "software-development" %}
+
+<h2>Software Development</h2>
+
+<ul class="post-list">
+  {% for post in projects %}
+    {% include post-li.html %}
+  {% endfor %}
+</ul>
+
 {% assign projects = site.posts | where: "type", "project" | where: "project-type", "misc" %}
 
 <h2>Misc</h2>
