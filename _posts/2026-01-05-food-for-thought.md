@@ -3,6 +3,7 @@ layout: post
 author: brayden
 type: project
 project-type: games
+excerpt: A cooking/typing game I made using PyGame.
 ---
 
 ## The Idea

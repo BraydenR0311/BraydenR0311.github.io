@@ -3,6 +3,8 @@ $primary-color:  #3b3a30;
 $secondary-color: #967969;
 $background-color: #F4F3EF;
 
+$content-width: 80vw;
+
 // HEX: #eaece5
 
 // HEX: #b2c2bf
@@ -32,6 +34,9 @@ a {
     color: $primary-color;
 }
 
+a:hover {  color: $secondary-color;  }
+
+
 h1 {
     margin: 0.5rem auto;
 }
@@ -58,34 +63,84 @@ h2 {
 
 .content {
     margin: 0 auto;
-    max-width: 80vw;
+    max-width: $content-width;
 }
 
-header {
+.top-header {
+    margin: 0.5rem auto;
+    max-width: $content-width;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 2rem;
+
+}
+
+.top-header + hr {
+    max-width: $content-width;
+}
+
+.top-header h1 {
+    line-height: 1;
+    color: $primary-color;
     margin: 0 auto;
-    max-width: 80vw;
-
-}
-
-header h1 {
-    margin: 1rem auto;
     font-size: 3rem;
 }
 
-header a:hover {  color: inherit;  }
 
-header a {
+
+.top-header a {
     text-decoration: none;
 }
 
 
-nav {
-    font-size: 1.75rem;
+.section-nav ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    list-style: none;
     justify-content: left;
-    gap: 32px
+    margin: 0;
+    font-size: 1.75rem;
 
+    padding-left: 0;
+    gap: 1rem;
+    row-gap: 0.5rem;
+}
+
+
+.social-nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    row-gap: 0.5rem;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+
+@media screen and (max-width: 680px) {
+    .section-nav ul {
+        font-size: 1rem;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .social-nav ul {
+        font-size: 1rem;
+        gap: 0.5rem;
+    }
+
+
+    .top-header h1 {
+        font-size: 2rem;
+    }
+
+
+    // .top-header {
+    //     flex-direction: column;
+    // }
 }
 
 
@@ -98,20 +153,42 @@ nav a:hover {  color: $secondary-color;  }
 
 
 .post-list {
-    list-style-type: none;
+    list-style: none;
     padding-left: 0;
     margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 1rem;
 
 }
 
-.post-list div {
+.post-list li {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
     font-size: 1.2rem;
 }
 .post-list p {
-    margin: 0 0px;
-    // width: 20ch;
+    margin: 0 0;
+}
+
+.post-list-date {
+    flex-shrink: 0;
+    min-width: 13ch;
+}
+
+.post-list a {
+    flex-shrink: 0;
+    min-width: 13ch;
+}
+
+@media screen and (max-width: 680px) {
+    .post-list li {
+        font-size: 0.75rem;
+    }
+
+
+
+
 }
 

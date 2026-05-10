@@ -1,14 +1,30 @@
 
-<header>
-  <a href="/">
-    <h1>Brayden Riesberg</h1>
-  </a>
-  <nav>
-    {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}>
-        {{ item.name }}
-      </a>
-    {% endfor %}
+<header class="top-header">
+  <div>
+    <a href="/">
+      <h1>Brayden Riesberg</h1>
+    </a>
+    <nav class="section-nav">
+      <ul>
+        {% for item in site.data.navigation %}
+        <li>
+          <a href="{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}>
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <nav class="social-nav">
+    <ul>
+      <li>
+        <a href="https://github.com/BraydenR0311">GitHub</a>
+      </li>
+      <li>
+        <a href="www.linkedin.com/in/brayden-riesberg-95931624a">LinkedIn</a>
+      </li>
+    </ul>
   </nav>
-  <hr>
 </header>
+<hr>
