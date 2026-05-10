@@ -19,6 +19,7 @@ $content-width: 80vw;
 
 html {
   font-size: 16px;
+
 }
 
 body {
@@ -27,6 +28,7 @@ body {
     color: $primary-color;
     background-color: $background-color;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -43,6 +45,12 @@ h1 {
 
 h2 {
     margin-bottom: 0.5rem;
+}
+
+pre {
+    font-size: 0.8rem;
+    background-color: rgb(235, 235, 235);
+    overflow-x: auto;     /* allows horizontal scrolling */
 }
 
 .img-container {
@@ -63,11 +71,17 @@ h2 {
 
 .content {
     margin: 0 auto;
+}
+
+.foreground {
+    padding: 1rem;
+    height: 100vh;
     max-width: $content-width;
+    margin: 0 auto;
 }
 
 .top-header {
-    margin: 0.5rem auto;
+    margin: 0rem auto;
     max-width: $content-width;
     display: flex;
     align-items: flex-start;
@@ -85,7 +99,6 @@ h2 {
     margin: 0 auto;
     font-size: 3rem;
 }
-
 
 
 .top-header a {
