@@ -21,7 +21,7 @@ At CERL, I work within the [SMS-TCX](https://www.sms.erdc.dren.mil/) team. For a
 
 We (the SMS-TCX team) are one of a select number of programs in the [U.S Army Corps of Engineers (USACE)](https://www.usace.army.mil/) designated as a [Technical Center of Expertise](https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/ER%201110-1-8158.pdf?ver=07iGp2f-1SR-7Ynpz6y6oA%3d%3d). The lab itself exists alongside seven other labs within the [Engineer Research & Development Center (ERDC)](https://www.erdc.usace.army.mil/), a subset within USACE, headquartered in Vicksburg, Mississippi. Other labs specialize in fields such as [cold regions](https://www.erdc.usace.army.mil/Locations/CRREL/) and [coastal and hydraulics](https://www.erdc.usace.army.mil/Locations/CHL/) research.
 
-I work on a research team comprised of mathematicians, PhD Civil Engineers, and software devs to improve methods of forecasting and analyzing facility and component degredation for all real property assets across the Department of War.
+I work on a research team comprised of mathematicians, PhD Civil Engineers, and software devs to improve methods of forecasting and analyzing facility and component degredation for real property assets across branches of the military and, more broadly, the Department of War.
 
 # About This Site
 
