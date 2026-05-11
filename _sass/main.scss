@@ -85,7 +85,9 @@ pre {
     margin: 0rem auto;
     max-width: $content-width;
     display: flex;
+    flex-flow: row nowrap;
     align-items: flex-start;
+    justify-content: space-between;
     column-gap: 2rem;
 
 }
