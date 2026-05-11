@@ -15,3 +15,13 @@ title: Brayden Riesberg's Homepage
     {% include post-li.html %}
   {% endfor %}
 </ul>
+
+{% assign blogs = site.posts | where: "type", "blog" %}
+
+<h2>Recent Blog Posts</h2>
+
+<ul class="post-list">
+  {% for post in blogs limit:5 %}
+    {% include post-li.html %}
+  {% endfor %}
+</ul>
